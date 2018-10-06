@@ -3,30 +3,26 @@
 void *ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char *mem;
+	size_t i;
 
+	i = 0;
 	mem = (unsigned char *)dst;
-	while (n--)
+	while (n-- && ++i)
 		*mem++ = *(unsigned char *)src++;
-	return (mem);
+	return (mem - i);
 }
 
 // #include <stdio.h>
 // #include <stdlib.h>
-// int main()
+// int main(int argc, char **argv)
 // {
-// 	char c = '9';
-// 	char d = 'j';
-// 	int i = 10;
-// 	int j = 10;
-// 	char *str = malloc(i);
-// 	char *str0 = malloc(j);
-// 	printf("test\n");
-// 	while (i && j)
+// 	if (argc == 4)
 // 	{
-// 		str[--i] = c--;
-// 		str0[--j] = d--;
+// 		char *a = memcpy(argv[1] ,argv[2] , atoi(argv[3]));
+// 		char *b = ft_memcpy(argv[1] ,argv[2] , atoi(argv[3]));
+// 		printf("%s\n", a);
+// 		printf("%s\n", b);
 // 	}
-// 	printf("test\n");
-// 	ft_memcpy(str , str0, 0);
-// 	printf("%s\n", str);
+// 	else
+// 	printf("lol les arguments\n" );
 // }
