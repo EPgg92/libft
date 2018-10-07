@@ -3,7 +3,10 @@
 
 void *ft_bzero(void *b, size_t n)
 {
-	return (ft_memset(b, 0, n));
+	unsigned char c;
+
+	c = '\0';
+	return ((void *)ft_memset(b, c, n));
 }
 
 // #include <stdio.h>

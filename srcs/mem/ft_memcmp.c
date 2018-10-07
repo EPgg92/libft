@@ -10,7 +10,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (n-- && c1 != NULL && c2 != NULL)
 		if (*c1++ != *c2++)
 			return (*(--c1) - *(--c2));
-	return ((c1 != NULL && c2 != NULL) ? 0 : NULL);
+	return (0);
 }
 
 // #include <stdio.h>
