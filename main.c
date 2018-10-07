@@ -17,17 +17,17 @@ void ft_green_red(char *str, int is_green)
 		printf(RED "Fail: %s\n" RESET, str);
 }
 
-void ft_test300(char *name_ft, int *f(void), int *g(void))
-{
-	char *str;
-	int i;
-
-	i = -1;
-	while (i < 300)
-	{
-
-	}
-}
+// void ft_test300(char *name_ft, int *f(void), int *g(void))
+// {
+// 	char *str;
+// 	int i;
+//
+// 	i = -1;
+// 	while (i < 300)
+// 	{
+//
+// 	}
+// }
 
 int main()
 {
