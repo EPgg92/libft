@@ -1,5 +1,4 @@
-// #include "libft.h" // to keep
-#include <stdlib.h> // to remove
+#include "libft.h"
 
 void ft_memdel(void **ap)
 {

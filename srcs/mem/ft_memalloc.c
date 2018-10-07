@@ -1,6 +1,5 @@
-#include "libft.h" // to keep
-// #include <stdlib.h> // to remove
-#include <string.h>
+#include "libft.h"
+
 
 void *ft_memalloc(size_t size)
 {
