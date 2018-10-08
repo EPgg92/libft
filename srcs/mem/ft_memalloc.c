@@ -1,25 +1,21 @@
 #include "libft.h"
 
-
 void *ft_memalloc(size_t size)
 {
 	unsigned char *m;
 
 	if (!(m = (unsigned char*)malloc(sizeof(unsigned char) * size)))
 		return (NULL);
-	while (--size)
-		m[size] = 0;
+	ft_bzero(m, size * sizeof(unsigned char));
 	return (m);
 }
 
 // #include <stdio.h>
-//
 // int main()
 // {
-// 	int i = 3;
+// 	int i = 6;
 //
 // 	char *a = (char*)ft_memalloc(i);
-// 	while (i)
-// 		a[--i] = 'a';
-// 	printf("%s\n", a);
+// 	while (i--)
+// 		printf("%d\n", a[i]==0);
 // }

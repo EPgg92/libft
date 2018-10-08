@@ -20,7 +20,20 @@ OBJECTS = srcs/is/ft_isalnum.o \
 	srcs/mem/ft_memdel.o \
 	srcs/mem/ft_memmove.o \
 	srcs/mem/ft_memset.o \
-	srcs/mem/ft_bzero.o
+	srcs/mem/ft_bzero.o \
+	srcs/conv/ft_tolower.o \
+	srcs/conv/ft_toupper.o \
+	srcs/str/ft_strnew.o \
+	srcs/str/ft_strlen.o \
+	srcs/str/ft_strclr.o \
+	srcs/str/ft_strdel.o \
+	srcs/str/ft_strchr.o
+	#srcs/str/ft_strncpy.o \
+	#srcs/str/ft_strcpy.o \
+
+
+
+
 
 all: $(NAME)
 

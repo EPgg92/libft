@@ -26,8 +26,8 @@ void *ft_memmove(void *dst, const void *src, size_t n)
 // {
 // 	if (argc == 4)
 // 	{
-// 		printf("%s test\n", ft_memmove(argv[1], argv[1]+1, atoi(argv[3])));
-// 		printf("%s gold\n", memmove(argv[2], argv[2]+1, atoi(argv[3])));
+// 		printf("%s test\n", ft_memmove(argv[1]+4, argv[1]+8, atoi(argv[3])));
+// 		printf("%s gold\n", memmove(argv[2]+4, argv[2]+8, atoi(argv[3])));
 // 	}
 // 	else
 // 		printf("Lol les arguments!!\n");

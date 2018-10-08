@@ -1,5 +1,4 @@
 #include "libft.h"
-
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char *c1;
@@ -7,14 +6,14 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	c1 = (unsigned char *)s1;
 	c2 = (unsigned char *)s2;
-	while (n-- && c1 != NULL && c2 != NULL)
+	while (n--)
 		if (*c1++ != *c2++)
 			return (*(--c1) - *(--c2));
 	return (0);
 }
 
 // #include <stdio.h>
-// #include <stdlib.h>
+//
 // int main(int argc, char const *argv[])
 // {
 // 	if (argc == 4)

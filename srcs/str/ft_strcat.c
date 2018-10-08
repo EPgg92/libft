@@ -1,6 +1,5 @@
-#include "libft.h"
-
-char	*ft_strcat(char *dest, char *scr)
+// to redo
+char	*ft_strcat(char *dest, const char *scr)
 {
 	int i;
 	int j;

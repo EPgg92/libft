@@ -2,5 +2,5 @@
 
 int ft_toupper(int c)
 {
-	return((ft_islower(c)) ? c + ' ' : c);
+	return((ft_islower(c)) ? c - ' ' : c);
 }

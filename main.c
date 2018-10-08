@@ -29,11 +29,32 @@ void ft_green_red(char *str, int is_green)
 // 	}
 // }
 
-int main()
+int main(int argc, char **argv)
 {
-	char a;
+	if (argc == 2)
+	{
+		// char *a1 = argv[1];
+		// char *a2 = argv[2];
+		// char *b1 = argv[1];
+		// char *b2 = argv[2];
+        //
+		// char *a = strncpy(a1, a2, atoi(argv[3]));
+		// char *b = ft_strncpy(b1, b2, atoi(argv[3]));
+		// printf("%s\n", a);
+		// printf("%s\n", b);
+        //
+		// //ft_green_red( "ft_strncpy",strncpy(argv[1], argv[2], atoi(argv[3])) == ft_strncpy(argv[1], argv[2], atoi(argv[3])));
 
-	a = 'a';
-	ft_green_red("ft_isalpha",ft_isalpha(a) == isalpha(a));
+		printf("%c %d\n", (char)ft_tolower(argv[1][0]), ft_tolower(argv[1][0]));
+		printf("%c %d\n", (char)ft_toupper(argv[1][0]), ft_toupper(argv[1][0]));
+
+	}
+	else
+	{
+		printf(YELLOW "LOL\n" RESET);
+		printf(RED "SVP\n" RESET);
+		printf(GREEN "LES\n" RESET);
+		printf(BLUE "ARGUMENTS\n" RESET);
+	}
 	return (0);
 }

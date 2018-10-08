@@ -3,13 +3,11 @@
 void *ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char *mem;
-	size_t i;
 
-	i = 0;
 	mem = (unsigned char *)dst;
-	while (n-- && ++i)
+	while (n--)
 		*mem++ = *(unsigned char *)src++;
-	return (mem - i);
+	return (dst);
 }
 
 // #include <stdio.h>
