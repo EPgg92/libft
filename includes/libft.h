@@ -5,6 +5,9 @@
 #	include <stdlib.h>
 #	include <unistd.h>
 #	include <string.h>
+
+#	define MAX(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b; })
+#	define MIN(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a < _b ? _a : _b; })
 	// mem
 	void *ft_memalloc(size_t size);
 	void *ft_memccpy(void *dst, const void *src, int c, size_t n);
@@ -32,6 +35,7 @@
 	char *ft_strchr(const char *s, int c);
 	void ft_strclr(char *s);
 	void ft_strdel(char **as);
+	int strcmp(const char *s1, const char *s2);
 	//char *ft_strncpy(char *dst, const char *src, size_t len);
 	//char *ft_strcpy(char * dst, const char * src);
 
