@@ -1,6 +1,9 @@
 #include "libft.h"
 
-
+char *strdup(const char *s1)
+{
+	return (ft_strcpy(ft_strnew(ft_strlen(s1)),s1));
+}
 
 
 // char	*ft_strdup(char *src)

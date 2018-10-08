@@ -29,9 +29,15 @@ OBJECTS = srcs/is/ft_isalnum.o \
 	srcs/str/ft_strdel.o \
 	srcs/str/ft_strcmp.o \
 	srcs/str/ft_strncmp.o \
-	srcs/str/ft_strchr.o
-	#srcs/str/ft_strncpy.o \
-	#srcs/str/ft_strcpy.o \
+	srcs/str/ft_strchr.o \
+	srcs/str/ft_strnequ.o \
+	srcs/str/ft_strequ.o \
+	srcs/str/ft_strcpy.o \
+	srcs/str/ft_strrchr.o \
+	srcs/str/ft_strdup.o \
+	srcs/str/ft_strnlen.o \
+	srcs/str/ft_strncpy.o
+
 
 
 

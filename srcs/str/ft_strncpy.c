@@ -1,15 +1,13 @@
+
+
 #include "libft.h"
-#include <stdio.h>
 
-char *ft_strncpy(char *dst, const char *src, size_t len)
+char *ft_strncpy(char *dst, const char *src, size_t n)
 {
-	char *ptr;
-	int len_dst;
+	size_t len;
 
-	len_dst = ft_strlen(dst);
-	ptr = dst;
-	dst = ft_memcpy(ptr, src, len);
-	ptr += len;
-	ft_bzero(ptr, len_dst);
+	len = ft_strnlen(dst, n);
+	ft_memcpy(dst, src, len);
+	ft_bzero(dst, n - len);
 	return (dst);
 }
