@@ -31,7 +31,7 @@ void ft_green_red(char *str, int is_green)
 
 int main(int argc, char **argv)
 {
-	if (argc == 2)
+	if (argc == 3)
 	{
 		// char *a1 = argv[1];
 		// char *a2 = argv[2];
@@ -45,8 +45,18 @@ int main(int argc, char **argv)
         //
 		// //ft_green_red( "ft_strncpy",strncpy(argv[1], argv[2], atoi(argv[3])) == ft_strncpy(argv[1], argv[2], atoi(argv[3])));
 
-		printf("%c %d\n", (char)ft_tolower(argv[1][0]), ft_tolower(argv[1][0]));
-		printf("%c %d\n", (char)ft_toupper(argv[1][0]), ft_toupper(argv[1][0]));
+		//printf("%c %d\n", (char)ft_tolower(argv[1][0]), ft_tolower(argv[1][0]));
+		//printf("%c %d\n", (char)ft_toupper(argv[1][0]), ft_toupper(argv[1][0]));
+
+		//printf("%s\n", ft_strrev(argv[1]));
+		char *a = argv[1];
+		char b = argv[2][0];
+		char *c = argv[1];
+		char d = argv[2][0];
+
+		printf("%s\n", ft_strrchr(a, b));
+		printf("%s\n", strrchr(c, d));
+
 
 	}
 	else

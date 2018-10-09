@@ -44,7 +44,20 @@
 	char *ft_strncpy(char *dst, const char *src, size_t len);
 	char *ft_strcpy(char * dst, const char * src);
 	int ft_strnlen(const char *str, size_t n);
-	char *strdup(const char *s1);
+	char *ft_strdup(const char *s1);
+	char *ft_strrev(const char *str);
+
+
+
+
+
+
+	//display
+	void ft_putchar_fd(char c, int fd);
+	void ft_putchar(char c);
+	void ft_putstr(char *str);
+	void ft_putstr_fd(char* str, int fd);
+
 
 
 

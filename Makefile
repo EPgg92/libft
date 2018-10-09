@@ -23,6 +23,10 @@ OBJECTS = srcs/is/ft_isalnum.o \
 	srcs/mem/ft_bzero.o \
 	srcs/conv/ft_tolower.o \
 	srcs/conv/ft_toupper.o \
+	srcs/display/ft_putchar.o \
+	srcs/display/ft_putchar_fd.o \
+	srcs/display/ft_putstr.o \
+	srcs/display/ft_putstr_fd.o \
 	srcs/str/ft_strnew.o \
 	srcs/str/ft_strlen.o \
 	srcs/str/ft_strclr.o \
@@ -35,6 +39,7 @@ OBJECTS = srcs/is/ft_isalnum.o \
 	srcs/str/ft_strcpy.o \
 	srcs/str/ft_strrchr.o \
 	srcs/str/ft_strdup.o \
+	srcs/str/ft_strrev.o \
 	srcs/str/ft_strnlen.o \
 	srcs/str/ft_strncpy.o
 
