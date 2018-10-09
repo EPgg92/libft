@@ -57,6 +57,8 @@
 	void ft_putchar(char c);
 	void ft_putstr(char *str);
 	void ft_putstr_fd(char* str, int fd);
+	void ft_putendl_fd(char *str, int fd);
+	void ft_putendl(char *str);
 
 
 

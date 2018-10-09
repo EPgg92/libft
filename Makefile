@@ -27,6 +27,8 @@ OBJECTS = srcs/is/ft_isalnum.o \
 	srcs/display/ft_putchar_fd.o \
 	srcs/display/ft_putstr.o \
 	srcs/display/ft_putstr_fd.o \
+	srcs/display/ft_putendl.o \
+	srcs/display/ft_putendl_fd.o \
 	srcs/str/ft_strnew.o \
 	srcs/str/ft_strlen.o \
 	srcs/str/ft_strclr.o \
