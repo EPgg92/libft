@@ -1,0 +1,47 @@
+atoi
+
+// int		ft_atoi(const char *str)
+// {
+// 	long long res;
+// 	int neg;
+//
+// 	res = 0;
+// 	neg = 0;
+// 	while (ft_isspace(*str))
+// 		str++;
+// 	if (*str == '+' || *str == '-')
+// 	{
+// 		if (*str == '-')
+// 			neg = 1;
+// 		str++;
+// 	}
+// 	while (ft_isdigit(*str))
+// 		res = res * 10 + *str++ - '0';
+// 	return (neg ? -res : res);
+// }
+//
+// #include "stdio.h"
+//
+// int main(int argc, char **argv) {
+// 	printf("%d\n", atoi(argv[1]));
+// 	printf("%d\n", ft_atoi(argv[1]));
+// 	return (0);
+// }
+
+bzero
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+// 	int i = 15;
+// 	char *lol = malloc(i);
+// 	while (i)
+// 		lol[--i] = 'X';
+// 	ft_bzero(lol, 14);
+// 	printf("%s\n", lol);
+// 	while (i < 20)
+// 		printf("%c", lol[i++]);
+// 	printf("\n");
+// }
