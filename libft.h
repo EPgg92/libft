@@ -16,7 +16,6 @@
 #	include <stdlib.h>
 #	include <unistd.h>
 #	include <string.h>
-
 #	define MAX(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b; })
 #	define MIN(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a < _b ? _a : _b; })
 #	define ABS(x)  ({ __typeof__ (x) _x = (x); ((_x) < 0) ? -(_x) : (_x);})
