@@ -55,6 +55,7 @@ OBJECTS = srcs/conv/ft_itoa.o\
 	srcs/str/ft_strreplace.o\
 	srcs/str/ft_strrev.o\
 	srcs/str/ft_strmap.o\
+	srcs/str/ft_strmapi.o\
 	srcs/str/ft_striter.o\
 	srcs/str/ft_striteri.o\
 	srcs/str/ft_strstr.o
