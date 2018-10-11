@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:17 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:17 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:45:34 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnew(size_t size)
+char	*ft_strnew(size_t size)
 {
 	char *m;
 

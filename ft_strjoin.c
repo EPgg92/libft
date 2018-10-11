@@ -6,9 +6,17 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:15 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:15 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:25:02 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char *ptr;
 
+	ptr = NULL;
+	s1++;
+	s2++;
+	return (ptr);
+}

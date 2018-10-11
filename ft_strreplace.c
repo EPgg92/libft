@@ -6,19 +6,19 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:18 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:18 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:52:13 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-char *ft_strreplace(char *dst, char chr, char repl_chr)
+char	*ft_strreplace(char *dst, char chr, char repl_chr)
 {
 	char *s;
 
 	s = dst;
-	while(*s)
+	while (*s)
 	{
-		if(*s == chr)
+		if (*s == chr)
 			*s = repl_chr;
 		s++;
 	}

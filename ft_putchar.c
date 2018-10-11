@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:10 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:10 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 18:59:02 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	ft_putchar_fd(c, 1);
 }

@@ -6,13 +6,12 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:04 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:04 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 18:39:30 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	long long nbr;
 	long long neg;
@@ -29,12 +28,12 @@ int ft_atoi(const char *str)
 	}
 	while (ft_isdigit(*str) && *str)
 	{
-		if(!ft_isdigit(*(str + 1)))
+		if (!ft_isdigit(*(str + 1)))
 		{
 			nbr += *str - '0';
-			break;
+			break ;
 		}
-		nbr = (nbr + *str++ - '0')*10;
+		nbr = (nbr + *str++ - '0') * 10;
 	}
 	return ((int)nbr * neg);
 }

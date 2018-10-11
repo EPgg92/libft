@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:11 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:11 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 18:59:47 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl_fd(char *str, int fd)
+void	ft_putendl_fd(char *str, int fd)
 {
 	if (str)
 	{

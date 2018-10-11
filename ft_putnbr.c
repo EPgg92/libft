@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:11 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:11 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:00:40 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
 	ft_putnbr_fd(n, 1);
 }

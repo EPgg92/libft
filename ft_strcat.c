@@ -6,12 +6,11 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:12 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:12 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:02:25 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-// to redo
 char	*ft_strcat(char *dest, const char *scr)
 {
 	int i;

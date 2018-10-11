@@ -6,18 +6,17 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:20 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:20 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 20:02:46 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-char *ft_strtrim(char const *s)
+char	*ft_strtrim(char const *s)
 {
-	char *str;
-	int len;
+	char	*str;
+	int		len;
 
 	str = ft_strdup(s);
 	len = ft_strlen(str);

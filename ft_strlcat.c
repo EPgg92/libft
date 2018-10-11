@@ -6,9 +6,16 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:15 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:15 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:31:20 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+size_t	strlcat(char *dst, const char *src, size_t size)
+{
+	dst++;
+	src++;
+	return (size);
+}

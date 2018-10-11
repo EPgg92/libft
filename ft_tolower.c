@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:20 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:20 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 20:04:35 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	return((ft_isupper(c)) ? c + ' ' : c);
+	return ((ft_isupper(c)) ? c + ' ' : c);
 }

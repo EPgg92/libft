@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:14 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:14 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:19:54 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strequ(char const *s1, char const *s2)
+int	ft_strequ(char const *s1, char const *s2)
 {
-	return ((s1 && s2 && ft_strcmp(s1, s2) == 0 ) ? 1 : 0);
+	return ((s1 && s2 && ft_strcmp(s1, s2) == 0) ? 1 : 0);
 }

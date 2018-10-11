@@ -6,17 +6,17 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:15 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:15 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:21:21 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int i;
 
 	i = 0;
 	if (f && s)
 		while (*s)
-			f(i++,s++);
+			f(i++, s++);
 }

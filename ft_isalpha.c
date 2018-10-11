@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:05 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:05 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 18:47:20 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	return (ft_islower(c) || ft_isupper(c));
 }

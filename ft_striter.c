@@ -6,12 +6,12 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:14 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:14 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:20:53 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	if (f && s)
 		while (*s)

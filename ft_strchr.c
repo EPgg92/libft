@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:12 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:12 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:11:37 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	return (ft_memchr(s, c, ft_strlen(s) + 1));
 }

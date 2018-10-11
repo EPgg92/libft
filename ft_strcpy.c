@@ -6,14 +6,14 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:13 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:13 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 20:01:42 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcpy(char * dst, const char * src)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	return (ft_memcpy(dst, src, ft_strlen(src)+1));
+	return (ft_memcpy(dst, src, ft_strlen(src) + 1));
 }

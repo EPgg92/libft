@@ -6,19 +6,18 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:16 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:24:16 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/11 19:36:38 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include <stdio.h>
-char * ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char *n;
-	int len;
-	int i;
+	char	*n;
+	int		len;
+	int		i;
 
 	if (!s || !f)
 		return (NULL);
