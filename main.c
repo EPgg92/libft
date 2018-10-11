@@ -55,9 +55,9 @@ void ft_green_red(char *str, int is_green)
 // 	}
 // }
 
-int main(int argc, char const *argv[])
+int main(int argc, char  **argv)
 {
-	if (argc == 2)
+	if (argc == 4)
 	{
 		// char *a1 = argv[1];
 		// char *a2 = argv[2];
@@ -95,7 +95,13 @@ int main(int argc, char const *argv[])
 		//printf("%d\n", atoi(argv[1]));
 		//printf("%d\n", ft_atoi(argv[1]));
 
-		printf("%s\n", ft_strmap(argv[1], ft_ctoupper));
+
+		char *a = argv[1];
+		char *b = argv[2];
+		char *c = argv[1];
+		char *d = argv[2];
+		printf("%s\n", ft_strncat(a, b , atoi(argv[1])));
+		printf("%s\n", strncat(c, d, atoi(argv[1])));
 
 
 	}

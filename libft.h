@@ -16,6 +16,7 @@
 #	include <stdlib.h>
 #	include <unistd.h>
 #	include <string.h>
+#	include <stdio.h> // to remove
 #	define MAX(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b; })
 #	define MIN(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a < _b ? _a : _b; })
 #	define ABS(x)  ({ __typeof__ (x) _x = (x); ((_x) < 0) ? -(_x) : (_x);})
@@ -58,6 +59,7 @@
 	size_t	ft_strnlen(const char *str, size_t n);
 	char	*ft_strdup(const char *s1);
 	char	*ft_strrev(const char *str);
+	char	*ft_strncat(char *s1, const char *s2, size_t n);
 	char	*fr_strstr(const char *haystack, const char *needle);
 	char	**ft_strsplit(char const *s, char c);
 	char	*ft_strreplace(char *dst, char chr, char repl_chr);

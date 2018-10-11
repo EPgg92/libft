@@ -15,7 +15,14 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	if (s2)
-		n++;
-	return (s1);
+	char	*ptr;
+	size_t 	len;
+	size_t 	min;
+
+	ptr = s1;
+	len = ft_strlen(s2) + 1;
+	s1 = ft_strchr(s1, 0);
+	min = MIN(len, n);
+	s1 = ft_strncpy(s1, s2, min);
+	return (ptr);
 }
