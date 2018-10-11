@@ -32,17 +32,3 @@ void *ft_memmove(void *dst, const void *src, size_t n)
 			*cdst++ = *csrc++;
 	return (dst);
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-// int main(int argc, char **argv)
-// {
-// 	if (argc == 4)
-// 	{
-// 		printf("%s test\n", ft_memmove(argv[1]+4, argv[1]+8, atoi(argv[3])));
-// 		printf("%s gold\n", memmove(argv[2]+4, argv[2]+8, atoi(argv[3])));
-// 	}
-// 	else
-// 		printf("Lol les arguments!!\n");
-// 	return 0;
-// }

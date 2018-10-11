@@ -24,17 +24,3 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 			return (*(--c1) - *(--c2));
 	return (0);
 }
-
-// #include <stdio.h>
-//
-// int main(int argc, char const *argv[])
-// {
-// 	if (argc == 4)
-// 	{
-// 		printf("%d\n", ft_memcmp(NULL, argv[2], atoi(argv[3])));
-// 		printf("%d\n", memcmp(argv[1], argv[2], atoi(argv[3])));
-// 	}
-// 	else
-// 	printf("LOL les arguments\n");
-// 	return 0;
-// }

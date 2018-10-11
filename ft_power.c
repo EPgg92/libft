@@ -23,11 +23,3 @@ long ft_power(long x, unsigned long y)
 	else
 		return x*temp*temp;
 }
-
-// #include <stdlib.h>
-// #include <stdio.h>
-//
-// int main(int argc, char **argv)
-// {
-// 	printf("%ld\n", ft_power( atoi(argv[1]), atoi(argv[2])));
-// }
