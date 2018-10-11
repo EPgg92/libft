@@ -8,6 +8,7 @@
 
 #	define MAX(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a > _b ? _a : _b; })
 #	define MIN(a,b) ({ __typeof__ (a) _a = (a); __typeof__ (b) _b = (b); _a < _b ? _a : _b; })
+#	define ABS(x)  ({ __typeof__ (x) _x = (x); ((_x) < 0) ? -(_x) : (_x);})
 	// mem
 	void *ft_memalloc(size_t size);
 	void *ft_memccpy(void *dst, const void *src, int c, size_t n);
@@ -19,6 +20,7 @@
 	void *ft_memset(void *b, int c, size_t len);
 	int ft_memcmp(const void *s1, const void *s2, size_t n);
 	void *ft_bzero(void *b, size_t n);
+	void *ft_memmem(const void *big, size_t big_len, const void *little, size_t little_len);
 	// is
 	int ft_isupper(int c);
 	int ft_islower(int c);
@@ -27,9 +29,13 @@
 	int ft_isalnum(int c);
 	int ft_isprint(int c);
 	int ft_isascii(int c);
+	int ft_isspace(int c);
 	// conv
 	int ft_toupper(int c);
 	int ft_tolower(int c);
+	long	ft_nbrlen(int input);
+	char *ft_itoa(int n);
+	int ft_atoi(const char *str);
 	// str
 	char *ft_strnew(size_t size);
 	int	ft_strlen(const char *str);
@@ -46,12 +52,12 @@
 	int ft_strnlen(const char *str, size_t n);
 	char *ft_strdup(const char *s1);
 	char *ft_strrev(const char *str);
-
-
-
-
-
-
+	char *fr_strstr(const char *haystack, const char *needle);
+	char **ft_strsplit(char const *s, char c);
+	char *ft_strreplace(char *dst, char chr, char repl_chr);
+	void ft_striter(char *s, void (*f)(char *));
+	void ft_striteri(char *s, void (*f)(unsigned int, char *));
+	char *ft_strmap(char const *s, char (*f)(char));
 	//display
 	void ft_putchar_fd(char c, int fd);
 	void ft_putchar(char c);
@@ -59,9 +65,13 @@
 	void ft_putstr_fd(char* str, int fd);
 	void ft_putendl_fd(char *str, int fd);
 	void ft_putendl(char *str);
+	void ft_putnbr_fd(int n, int fd);
+	void ft_putnbr(int n);
+	//math
+	long ft_power(long x, unsigned long y);
 
 
-
+	char ft_ctoupper(char c);
 
 
 #endif

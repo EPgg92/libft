@@ -29,9 +29,9 @@ void ft_green_red(char *str, int is_green)
 // 	}
 // }
 
-int main(int argc, char **argv)
+int main(int argc, char const *argv[])
 {
-	if (argc == 3)
+	if (argc == 2)
 	{
 		// char *a1 = argv[1];
 		// char *a2 = argv[2];
@@ -49,13 +49,27 @@ int main(int argc, char **argv)
 		//printf("%c %d\n", (char)ft_toupper(argv[1][0]), ft_toupper(argv[1][0]));
 
 		//printf("%s\n", ft_strrev(argv[1]));
-		char *a = argv[1];
-		char b = argv[2][0];
-		char *c = argv[1];
-		char d = argv[2][0];
+		// char *a = argv[1];
+		// char b = argv[2][0];
+		// char *c = argv[1];
+		// char d = argv[2][0];
+        //
+		// printf("%s\n", ft_strrchr(a, b));
+		// printf("%s\n", strrchr(c, d));
 
-		printf("%s\n", ft_strrchr(a, b));
-		printf("%s\n", strrchr(c, d));
+		// printf("%zu\n", ft_nbrlen(atoi(argv[1])));
+		// printf("%s\n", ft_itoa(atoi(argv[1])));
+		// ft_putnbr(atoi(argv[1]));
+
+		// char **tab = ft_strsplit(argv[1], ' ');
+		// while (tab)
+		// 	printf("%s\n",*tab++);
+
+		//printf("%s\n", ft_strtrim(argv[1]));
+		//printf("%d\n", atoi(argv[1]));
+		//printf("%d\n", ft_atoi(argv[1]));
+
+		printf("%s\n", ft_strmap(argv[1], ft_ctoupper));
 
 
 	}
