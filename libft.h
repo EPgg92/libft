@@ -44,7 +44,7 @@
 	char	*ft_itoa(int n);
 	int		ft_atoi(const char *str);
 	char	*ft_strnew(size_t size);
-	int		ft_strlen(const char *str);
+	size_t	ft_strlen(const char *str);
 	char	*ft_strchr(const char *s, int c);
 	void	ft_strclr(char *s);
 	void	ft_strdel(char **as);
@@ -55,7 +55,7 @@
 	int		ft_strequ(char const *s1, char const *s2);
 	char	*ft_strncpy(char *dst, const char *src, size_t len);
 	char	*ft_strcpy(char * dst, const char * src);
-	int		ft_strnlen(const char *str, size_t n);
+	size_t	ft_strnlen(const char *str, size_t n);
 	char	*ft_strdup(const char *s1);
 	char	*ft_strrev(const char *str);
 	char	*fr_strstr(const char *haystack, const char *needle);

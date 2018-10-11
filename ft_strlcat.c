@@ -13,9 +13,9 @@
 
 #include "libft.h"
 
-size_t	strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	dst++;
-	src++;
-	return (size);
+	if (dst && src)
+		return (size);
+	return (0);
 }

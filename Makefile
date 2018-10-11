@@ -1,7 +1,7 @@
 
 NAME = libft.a
 
-CFLAGS = -Wall -Wextra -Werrorma
+CFLAGS = -Wall -Wextra -Werror
 
 CC = gcc
 
@@ -73,7 +73,7 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
-	$(CC) $(CFLAGS) -g main.c $(NAME) # to remove
+	#$(CC) $(CFLAGS) -g main.c $(NAME) # to remove
 
 clean:
 	rm -f $(OBJECTS)

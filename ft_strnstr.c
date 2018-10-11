@@ -11,6 +11,8 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*strstr(const char *haystack, const char *needle)
 {
 	char *ptr;

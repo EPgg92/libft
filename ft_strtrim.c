@@ -22,7 +22,6 @@ char	*ft_strtrim(char const *s)
 	len = ft_strlen(str);
 	while (str)
 	{
-		printf("%c %c\n", *str, *(str + 1));
 		if (ft_isspace(*str) && *(str + 1) != '\0')
 			*str = *(str + 1);
 		str++;
