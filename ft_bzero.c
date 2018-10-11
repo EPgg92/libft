@@ -1,21 +1,19 @@
+/* ************************************************************************** */
+/*                                                          LE - /            */
+/*                                                              /             */
+/*   ft_bzero.c                                       .::    .:/ .      .::   */
+/*                                                 +:+:+   +:    +:  +:+:+    */
+/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*                                                 #+#   #+    #+    #+#      */
+/*   Created: 2018/10/11 18:24:04 by epoggio      #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/11 18:24:04 by epoggio     ###    #+. /#+    ###.fr     */
+/*                                                         /                  */
+/*                                                        /                   */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void *ft_bzero(void *b, size_t n)
 {
 	return (ft_memset(b, 0, n));
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-// int main()
-// {
-// 	int i = 15;
-// 	char *lol = malloc(i);
-// 	while (i)
-// 		lol[--i] = 'X';
-// 	ft_bzero(lol, 14);
-// 	printf("%s\n", lol);
-// 	while (i < 20)
-// 		printf("%c", lol[i++]);
-// 	printf("\n");
-// }
