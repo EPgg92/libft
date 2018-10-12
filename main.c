@@ -1,3 +1,29 @@
+/* ************************************************************************** */
+/*                                                          LE - /            */
+/*                                                              /             */
+/*   main.c                                           .::    .:/ .      .::   */
+/*                                                 +:+:+   +:    +:  +:+:+    */
+/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*                                                 #+#   #+    #+    #+#      */
+/*   Created: 2018/10/11 18:15:03 by epoggio      #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/11 18:15:03 by epoggio     ###    #+. /#+    ###.fr     */
+/*                                                         /                  */
+/*                                                        /                   */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/*                                                          LE - /            */
+/*                                                              /             */
+/*   main.c                                           .::    .:/ .      .::   */
+/*                                                 +:+:+   +:    +:  +:+:+    */
+/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*                                                 #+#   #+    #+    #+#      */
+/*   Created: 2018/10/11 18:12:54 by epoggio      #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/11 18:12:54 by epoggio     ###    #+. /#+    ###.fr     */
+/*                                                         /                  */
+/*                                                        /                   */
+/* ************************************************************************** */
+
 
 #include <ctype.h>
 #include <stdio.h>
@@ -29,24 +55,54 @@ void ft_green_red(char *str, int is_green)
 // 	}
 // }
 
-int main(int argc, char **argv)
+int main(int argc, char  **argv)
 {
-	if (argc == 2)
+	if (argc == 4)
 	{
 		// char *a1 = argv[1];
 		// char *a2 = argv[2];
 		// char *b1 = argv[1];
 		// char *b2 = argv[2];
-        //
+		//
 		// char *a = strncpy(a1, a2, atoi(argv[3]));
 		// char *b = ft_strncpy(b1, b2, atoi(argv[3]));
 		// printf("%s\n", a);
 		// printf("%s\n", b);
-        //
+		//
 		// //ft_green_red( "ft_strncpy",strncpy(argv[1], argv[2], atoi(argv[3])) == ft_strncpy(argv[1], argv[2], atoi(argv[3])));
 
-		printf("%c %d\n", (char)ft_tolower(argv[1][0]), ft_tolower(argv[1][0]));
-		printf("%c %d\n", (char)ft_toupper(argv[1][0]), ft_toupper(argv[1][0]));
+		//printf("%c %d\n", (char)ft_tolower(argv[1][0]), ft_tolower(argv[1][0]));
+		//printf("%c %d\n", (char)ft_toupper(argv[1][0]), ft_toupper(argv[1][0]));
+
+		//printf("%s\n", ft_strrev(argv[1]));
+		// char *a = argv[1];
+		// char b = argv[2][0];
+		// char *c = argv[1];
+		// char d = argv[2][0];
+		//
+		// printf("%s\n", ft_strrchr(a, b));
+		// printf("%s\n", strrchr(c, d));
+
+		// printf("%zu\n", ft_nbrlen(atoi(argv[1])));
+		// printf("%s\n", ft_itoa(atoi(argv[1])));
+		// ft_putnbr(atoi(argv[1]));
+
+		// char **tab = ft_strsplit(argv[1], ' ');
+		// while (tab)
+		// 	printf("%s\n",*tab++);
+
+		//printf("%s\n", ft_strtrim(argv[1]));
+		//printf("%d\n", atoi(argv[1]));
+		//printf("%d\n", ft_atoi(argv[1]));
+
+
+		char *a = argv[1];
+		char *b = argv[2];
+		char *c = argv[1];
+		char *d = argv[2];
+		printf("%s\n", ft_strncat(a, b , atoi(argv[1])));
+		printf("%s\n", strncat(c, d, atoi(argv[1])));
+
 
 	}
 	else
