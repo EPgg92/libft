@@ -21,11 +21,10 @@ char	*ft_strtrim(char const *s)
 
 	str = ft_strdup(s);
 	len = ft_strlen(str);
-	len++;
 	ptr = str;
-	while (str)
+	while (len--)
 	{
-		if (ft_isspace(*str) && *(str + 1) != '\0')
+		if (ft_isspace(*str))
 			*str = *(str + 1);
 		str++;
 	}
