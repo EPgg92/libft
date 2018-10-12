@@ -16,10 +16,13 @@
 char	*ft_strtrim(char const *s)
 {
 	char	*str;
+	char	*ptr;
 	int		len;
 
 	str = ft_strdup(s);
 	len = ft_strlen(str);
+	len++;
+	ptr = str;
 	while (str)
 	{
 		if (ft_isspace(*str) && *(str + 1) != '\0')
