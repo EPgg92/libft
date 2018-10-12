@@ -29,5 +29,5 @@ char	*ft_strtrim(char const *s)
 			*str = *(str + 1);
 		str++;
 	}
-	return (str);
+	return (ptr);
 }
