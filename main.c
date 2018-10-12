@@ -57,7 +57,7 @@ void ft_green_red(char *str, int is_green)
 
 int main(int argc, char  **argv)
 {
-	if (argc == 4)
+	if (argc == 2)
 	{
 		// char *a1 = argv[1];
 		// char *a2 = argv[2];
@@ -96,20 +96,22 @@ int main(int argc, char  **argv)
 		//printf("%d\n", ft_atoi(argv[1]));
 
 
-		char *a = argv[1];
-		char *b = argv[2];
-		char *c = argv[1];
-		char *d = argv[2];
-		printf("%s\n", ft_strncat(a, b , atoi(argv[1])));
-		printf("%s\n", strncat(c, d, atoi(argv[1])));
+		// char *a = argv[1];
+		// char *b = argv[2];
+		// char *c = argv[1];
+		// char *d = argv[2];
+		// printf("%s\n", ft_strncat(a, b , atoi(argv[1])));
+		// printf("%s\n", strncat(c, d, atoi(argv[1])));
 
+		char *a = argv[1];
+		printf("%s\n", ft_strtrim(a));
 
 	}
 	else
 	{
-		printf(YELLOW "LOL\n" RESET);
-		printf(RED "SVP\n" RESET);
-		printf(GREEN "LES\n" RESET);
+		printf(YELLOW "LOL " RESET);
+		printf(RED "SVP " RESET);
+		printf(GREEN "LES " RESET);
 		printf(BLUE "ARGUMENTS\n" RESET);
 	}
 	return (0);

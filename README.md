@@ -45,7 +45,7 @@ Nomenclature :
 | ft_putnbr_fd.c  |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_putstr.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_putstr_fd.c  |                  ✅                  |     ✅    |        ✅        |    🚫   |
-| ft_strcat.c     |     🚫 buf == ft_strcat(buf, "")    |    🚫    |        ✅        |    🚫   |
+| ft_strcat.c     |     🚫 buf == ft_strcat(buf, "")    |     ✅    |        ✅        |    🚫   |
 | ft_strchr.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_strclr.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_strcmp.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
@@ -55,7 +55,7 @@ Nomenclature :
 | ft_strequ.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_striter.c    |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_striteri.c   |                  ✅                  |     ✅    |        ✅        |    🚫   |
-| ft_strjoin.c    |                  🚫                 |    🚫    |        🚫       |    🚫   |
+| ft_strjoin.c    |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_strlcat.c    |                  🚫                 |    🚫    |        🚫       |    🚫   |
 | ft_strlen.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_strmap.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
@@ -71,8 +71,8 @@ Nomenclature :
 | ft_strreplace.c |                  🆗                 |    🆗    |        🆗       |    🚫   |
 | ft_strrev.c     |                  🆗                 |    🆗    |        🆗       |    🚫   |
 | ft_strsplit.c   |                  🚫                 |    🚫    |        🚫       |    🚫   |
-| ft_strstr.c     |                  🚫                 |    🚫    |        🚫       |    🚫   |
-| ft_strsub.c     |                  🚫                 |    🚫    |        🚫       |    🚫   |
-| ft_strtrim.c    |                  🚫                 |    🚫    |        🚫       |    🚫   |
+| ft_strstr.c     |                  ✅                  |     ✅    |        ✅        |    🚫   |
+| ft_strsub.c     |                  🚫                 |     ✅    |        ✅        |    🚫   |
+| ft_strtrim.c    |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_tolower.c    |                  ✅                  |     ✅    |        ✅        |    🚫   |
 | ft_toupper.c    |                  ✅                  |     ✅    |        ✅        |    🚫   |
