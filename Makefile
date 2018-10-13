@@ -73,7 +73,7 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
-	$(CC) $(CFLAGS) main.c $(NAME) # to remove
+	#$(CC) $(CFLAGS) main.c $(NAME) # to remove
 
 clean:
 	rm -f $(OBJECTS)

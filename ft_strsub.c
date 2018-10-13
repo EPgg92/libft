@@ -15,9 +15,16 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	len++;
-	start++;
-	if (s)
+	char *str;
+	char *ptr;
+
+	str = ft_strnew(len);
+	if (str == NULL || !s)
 		return (NULL);
-	return (NULL);
+	ptr = str;
+	while (start--)
+		s++;
+	while (len--)
+		*str++ = *s++;
+	return (ptr);
 }

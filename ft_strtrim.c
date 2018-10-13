@@ -13,20 +13,29 @@
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+static int	ft_specspace(char c)
+{
+	return (c == '\n' || c == ' ' || c == '\t');
+}
+
+char		*ft_strtrim(char const *s)
 {
 	char	*str;
-	char	*ptr;
 	int		len;
 
-	str = ft_strdup(s);
-	len = ft_strlen(str);
-	ptr = str;
-	while (len--)
-	{
-		if (ft_isspace(*str))
-			*str = *(str + 1);
-		str++;
-	}
-	return (ptr);
+	if (!s)
+		return (NULL);
+	while (ft_specspace(*s) && *s)
+		s++;
+	if (*s == '\0')
+		return (ft_strnew(1));
+	len = ft_strlen(s);
+	s += len - 1;
+	while (ft_specspace(*s) && len--)
+		s--;
+	if ((str = ft_strnew(len)) == NULL)
+		return (NULL);
+	s -= len - 1;
+	ft_strncpy(str, s, len);
+	return (str);
 }

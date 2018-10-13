@@ -47,8 +47,7 @@ char		**ft_strsplit(char const *s, char c)
 		return (NULL);
 	i = 0;
 	nw = 0;
-	nw++;
-	while (i < len)
+	while (i < len && ++nw)
 	{
 		if (str + i)
 		{
@@ -57,5 +56,6 @@ char		**ft_strsplit(char const *s, char c)
 		}
 		i++;
 	}
-	return (tab);
+	*tab = NULL;
+	return (tab - nw);
 }

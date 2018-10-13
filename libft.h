@@ -77,4 +77,10 @@
 	void	ft_putnbr(int n);
 	long	ft_power(long x, unsigned long y);
 	char	ft_ctoupper(char c);
+	char	*ft_strtrim(char const *s);
+	char	*ft_strstr(const char *haystack, const char *needle);
+	char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+	char	*ft_strcat(char *dest, const char *scr);
+	char	*ft_strsub(char const *s, unsigned int start, size_t len);
+	char	*ft_strjoin(char const *s1, char const *s2);
 #endif
