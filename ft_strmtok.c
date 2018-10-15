@@ -8,7 +8,7 @@ char *ft_strmtok(char **stringp, const char *delim)
 	begin = *stringp;
 	if (begin == NULL)
 		return (NULL);
-	while (ft_isincharset(*begin,delim))
+	while (ft_isincharset(*begin, delim))
 		begin++;
 	end = begin + ft_strcspn(begin, delim);
 	if (*end)

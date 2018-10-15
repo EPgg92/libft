@@ -22,7 +22,6 @@ OBJECTS = ft_atoi.o \
 	ft_memcmp.o \
 	ft_memcpy.o \
 	ft_memdel.o \
-	ft_memmem.o \
 	ft_memmove.o \
 	ft_memset.o \
 	ft_nbrlen.o \
@@ -76,9 +75,8 @@ OBJECTS = ft_atoi.o \
 	ft_toupper.o
 
 
-# %.o: %.c
-# 	@$(COMP) -o $@ -c $<
-
+%.o: %.c
+	$(CC) -o $@ -c $< $(CFLAGS)
 
 all: $(NAME)
 
@@ -94,5 +92,5 @@ fclean: clean
 
 re: fclean all
 
-# .PHONY: all clean fclean re
-# .SILENT: $(OBJ)
+.PHONY: all clean fclean re
+.SILENT: $(OBJECTS)
