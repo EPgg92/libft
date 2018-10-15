@@ -83,4 +83,12 @@
 	char	*ft_strcat(char *dest, const char *scr);
 	char	*ft_strsub(char const *s, unsigned int start, size_t len);
 	char	*ft_strjoin(char const *s1, char const *s2);
+	size_t	ft_strspn(const char *s, const char *charset);
+	size_t	ft_strcspn(const char *s, const char *charset);
+	char 	*ft_strpbrk(const char *s1, const char *s2);
+	char	*ft_strsep(char **stringp, const char *delim);
+	int		ft_isincharset(char c, char const *charset);
+	char	*ft_strtrimcharset(char const *s, char const *charset);
+	char	*ft_strmtok(char **stringp, const char *delim);
+	char	*ft_strchar(char c);
 #endif

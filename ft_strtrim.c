@@ -13,29 +13,34 @@
 
 #include "libft.h"
 
-static int	ft_specspace(char c)
-{
-	return (c == '\n' || c == ' ' || c == '\t');
-}
+// static int	ft_specspace(char c)
+// {
+// 	return (c == '\n' || c == ' ' || c == '\t');
+// }
+//
+// char		*ft_strtrim(char const *s)
+// {
+// 	char	*str;
+// 	int		len;
+//
+// 	if (!s)
+// 		return (NULL);
+// 	while (ft_specspace(*s) && *s)
+// 		s++;
+// 	if (*s == '\0')
+// 		return (ft_strnew(1));
+// 	len = ft_strlen(s);
+// 	s += len - 1;
+// 	while (ft_specspace(*s) && len--)
+// 		s--;
+// 	if ((str = ft_strnew(len)) == NULL)
+// 		return (NULL);
+// 	s -= len - 1;
+// 	ft_strncpy(str, s, len);
+// 	return (str);
+// }
 
 char		*ft_strtrim(char const *s)
 {
-	char	*str;
-	int		len;
-
-	if (!s)
-		return (NULL);
-	while (ft_specspace(*s) && *s)
-		s++;
-	if (*s == '\0')
-		return (ft_strnew(1));
-	len = ft_strlen(s);
-	s += len - 1;
-	while (ft_specspace(*s) && len--)
-		s--;
-	if ((str = ft_strnew(len)) == NULL)
-		return (NULL);
-	s -= len - 1;
-	ft_strncpy(str, s, len);
-	return (str);
+	return (ft_strtrimcharset(s, "\n \t"));
 }

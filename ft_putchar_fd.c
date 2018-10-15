@@ -13,7 +13,22 @@
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void    ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+    unsigned char chr[2];
+
+    if (c >= 0)
+        write (fd, &c, 1);
+    else if (c >= -64)
+    {
+        chr[0] = 195;
+        chr[1] = c + 192;
+        write (fd, chr, 2);
+    }
+    else if (c < -64)
+    {
+        chr[0] = 194;
+        chr[1] = c + 256;
+        write (fd, chr, 2);
+    }
 }

@@ -63,7 +63,15 @@ OBJECTS = ft_atoi.o \
 	ft_strsplit.o \
 	ft_strstr.o \
 	ft_strsub.o \
+	ft_strpbrk.o \
+	ft_strspn.o \
+	ft_strcspn.o \
+	ft_strsep.o \
 	ft_strtrim.o \
+	ft_strmtok.o \
+	ft_strchar.o \
+	ft_strtrimcharset.o \
+	ft_isincharset.o \
 	ft_tolower.o \
 	ft_toupper.o
 
@@ -73,7 +81,7 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
-	#$(CC) $(CFLAGS) main.c $(NAME) # to remove
+	$(CC) $(CFLAGS) main.c $(NAME) # to remove
 
 clean:
 	rm -f $(OBJECTS)

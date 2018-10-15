@@ -11,6 +11,9 @@
 /*                                                        /                   */
 /* ************************************************************************** */
 
+// todo /!\ hugo dit qu'il faut utiliser le n au lieu de n pour le - 
+
+
 #include "libft.h"
 
 char	*ft_itoa(int n)

@@ -1,15 +1,18 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strpbrk.c                                     .::    .:/ .      .::   */
+/*   ft_strspn.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: exam <marvin@le-101.fr>                    +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/10/09 10:53:51 by exam         #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/09 11:29:52 by exam        ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/09 11:37:14 by exam         #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/09 12:29:40 by exam        ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
+
+#include "libft.h"
+
 
 // #include <string.h>
 //
@@ -21,14 +24,16 @@
 // 	return (NULL);
 // }
 
-#include "libft.h"
 
-char *ft_strpbrk(const char *s1, const char *s2)
+size_t ft_strcspn(const char *s, const char *charset)
 {
-	while (*s1)
-		if (ft_strchr(s2, *s1++))
-			return ((char *)(--s1));
-	return (NULL);
+	size_t i;
+	char ptr;
+
+	i = 0;
+	while (*s && (ptr = ft_strchr(charset, *s++) == NULL))
+		i++;
+	return (i);
 }
 
 // #include <stdio.h>
@@ -39,11 +44,11 @@ char *ft_strpbrk(const char *s1, const char *s2)
 // 	{
 // 		char *a = argv[1];
 // 		char *c = argv[1];
-// 		char *d = "\0";
-// 		char *b = "\0";
+// 		char *d = argv[2];
+// 		char *b = argv[2];
 //
-// 		printf("%s\n", ft_strpbrk(a,b));
-// 		printf("%s\n", strpbrk(c, d));
+// 		printf("%lu\n", ft_strcspn(a,b));
+// 		printf("%lu\n", strcspn(c, d));
 // 	}
 // 	else
 // 		printf("Les arguments STP\n" );

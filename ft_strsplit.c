@@ -13,49 +13,53 @@
 
 #include "libft.h"
 
-static int	ft_count_w(char *str, int len)
+static int	ft_intword(char const *s, char *sep)
 {
-	int nw;
-	int	i;
+	char *token;
+	char *string;
+	char *begin;
+	int	nw;
 
-	i = 0;
 	nw = 0;
-	while (i < len)
-	{
-		if (str + i)
-		{
-			i += ft_strlen(str + i);
-			nw++;
-		}
-		i++;
-	}
+	if ((begin = ft_strtrimcharset(ft_strdup(s), sep)) == NULL)
+		return (0);
+	string = begin;
+	while ((token = ft_strmtok(&string, sep)) != NULL)
+		nw++;
+	ft_strdel(&begin);
 	return (nw);
+}
+
+static char	**ft_filltab(char const *s, char *sep, char **tab, int nw)
+{
+	char *token;
+	char *string;
+	char *begin;
+
+	if ((begin = ft_strtrimcharset(ft_strdup(s), sep)) == NULL)
+		return (NULL);
+	string = begin;
+	while ((token = ft_strmtok(&string, sep)) != NULL)
+		*tab++ = token;
+	*tab = NULL;
+	ft_strdel(&begin);
+	tab -= nw;
+	return (tab);
 }
 
 char		**ft_strsplit(char const *s, char c)
 {
-	char	*str;
-	char	**tab;
-	int		len;
-	int		i;
-	int		nw;
+	char **ret;
+	char sep[2];
+	int	nw;
 
-	str = ft_strdup(s);
-	len = ft_strlen(s);
-	ft_strreplace(str, c, '\0');
-	if ((tab = (char **)malloc(sizeof(char*) * ft_count_w(str, len))) == NULL)
+	sep[0] = c;
+	sep[1] = '\0';
+	if (!s)
 		return (NULL);
-	i = 0;
-	nw = 0;
-	while (i < len && ++nw)
-	{
-		if (str + i)
-		{
-			*tab++ = ft_strdup(str + i);
-			i += ft_strlen(str + i);
-		}
-		i++;
-	}
-	*tab = NULL;
-	return (tab - nw);
+	if ((nw = ft_intword(s, sep)) == 0)
+		return (NULL);
+	if ((ret = (char **)malloc(sizeof(char*) * nw + 1)) == NULL)
+		return (NULL);
+	return (ft_filltab(s, sep, ret, nw));
 }

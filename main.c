@@ -1,28 +1,3 @@
-/* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   main.c                                           .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/10/11 18:15:03 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:15:03 by epoggio     ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
-/* ************************************************************************** */
-
-/* ************************************************************************** */
-/*                                                          LE - /            */
-/*                                                              /             */
-/*   main.c                                           .::    .:/ .      .::   */
-/*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
-/*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/10/11 18:12:54 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:12:54 by epoggio     ###    #+. /#+    ###.fr     */
-/*                                                         /                  */
-/*                                                        /                   */
-/* ************************************************************************** */
 
 
 #include <ctype.h>
@@ -57,7 +32,7 @@ void ft_green_red(char *str, int is_green)
 
 int main(int argc, char  **argv)
 {
-	if (argc == 4)
+	if (argc == 1)
 	{
 		// char *a1 = argv[1];
 		// char *a2 = argv[2];
@@ -87,9 +62,13 @@ int main(int argc, char  **argv)
 		// printf("%s\n", ft_itoa(atoi(argv[1])));
 		// ft_putnbr(atoi(argv[1]));
 
-		// char **tab = ft_strsplit(argv[1], ' ');
-		// while (tab)
-		// 	printf("%s\n",*tab++);
+		printf("%s\n", argv[argc-1] );
+		char **tab = ft_strsplit("split  ||this|for|me|||||!|", '|');
+		while (*tab)
+			printf("%s\n", *tab++);
+
+		//while (*tab != NULL)
+		//	printf("%s\n", *tab++);
 
 		//printf("%s\n", ft_strtrim(argv[1]));
 		//printf("%d\n", atoi(argv[1]));
@@ -103,8 +82,8 @@ int main(int argc, char  **argv)
 		// printf("%s\n", ft_strncat(a, b , atoi(argv[1])));
 		// printf("%s\n", strncat(c, d, atoi(argv[1])));
 
-		char *a = argv[1];
-		printf("%s\n", ft_strtrim(a));
+		// char *a = argv[1];
+		// printf("%s\n", ft_strtrim(a));
 
 	}
 	else
