@@ -76,6 +76,9 @@ OBJECTS = ft_atoi.o \
 	ft_toupper.o
 
 
+# %.o: %.c
+# 	@$(COMP) -o $@ -c $<
+
 
 all: $(NAME)
 
@@ -90,3 +93,6 @@ fclean: clean
 	rm -f $(NAME) a.out
 
 re: fclean all
+
+# .PHONY: all clean fclean re
+# .SILENT: $(OBJ)

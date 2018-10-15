@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char		*ft_strtrimcharset(char const *s, char const *charset)
+char	*ft_strtrimcharset(char const *s, char const *charset)
 {
 	char	*str;
 	int		len;

@@ -91,4 +91,6 @@
 	char	*ft_strtrimcharset(char const *s, char const *charset);
 	char	*ft_strmtok(char **stringp, const char *delim);
 	char	*ft_strchar(char c);
+	size_t	ft_strlcat(char *dst, const char *src, size_t size);
+
 #endif

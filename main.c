@@ -32,7 +32,7 @@ void ft_green_red(char *str, int is_green)
 
 int main(int argc, char  **argv)
 {
-	if (argc == 1)
+	if (argc == 3)
 	{
 		// char *a1 = argv[1];
 		// char *a2 = argv[2];
@@ -62,10 +62,11 @@ int main(int argc, char  **argv)
 		// printf("%s\n", ft_itoa(atoi(argv[1])));
 		// ft_putnbr(atoi(argv[1]));
 
-		printf("%s\n", argv[argc-1] );
-		char **tab = ft_strsplit("split  ||this|for|me|||||!|", '|');
-		while (*tab)
-			printf("%s\n", *tab++);
+		//printf("%s\n", argv[argc-1]);
+		char **tab = ft_strsplit(argv[1], argv[2][0]);
+		printf("%p\n", tab);
+		printf("%s\n", *tab);
+
 
 		//while (*tab != NULL)
 		//	printf("%s\n", *tab++);

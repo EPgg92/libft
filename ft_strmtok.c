@@ -10,7 +10,6 @@ char *ft_strmtok(char **stringp, const char *delim)
 		return (NULL);
 	while (ft_isincharset(*begin,delim))
 		begin++;
-	//printf("%s\n",begin );
 	end = begin + ft_strcspn(begin, delim);
 	if (*end)
 	{
@@ -19,5 +18,5 @@ char *ft_strmtok(char **stringp, const char *delim)
 	}
 	else
 		*stringp = NULL;
-	return begin;
+	return (begin);
 }
