@@ -78,6 +78,9 @@ OBJECTS = ft_atoi.o \
 	ft_strtrim.o \
 	ft_strtrimcharset.o \
 	ft_tolower.o \
+	ft_max.o \
+	ft_abs.o \
+	ft_min.o \
 	ft_toupper.o
 
 

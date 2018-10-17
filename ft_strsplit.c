@@ -6,20 +6,20 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:19 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 19:11:24 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/17 02:35:16 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_intword(char const *s, char *sep)
+static int		ft_intword(char const *s, char *sep)
 {
-	char *token;
-	char *string;
-	char *begin;
-	char *tmp;
-	int	nw;
+	char	*token;
+	char	*string;
+	char	*begin;
+	char	*tmp;
+	int		nw;
 
 	nw = 0;
 	tmp = ft_strdup(s);
@@ -33,7 +33,7 @@ static int	ft_intword(char const *s, char *sep)
 	return (nw);
 }
 
-static char	**ft_filltab(char const *s, char *sep, char **tab, int nw)
+static char		**ft_filltab(char const *s, char *sep, char **tab, int nw)
 {
 	char *token;
 	char *string;
@@ -53,11 +53,11 @@ static char	**ft_filltab(char const *s, char *sep, char **tab, int nw)
 	return (tab);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
-	char **ret;
-	char sep[2];
-	int	nw;
+	char	**ret;
+	char	sep[2];
+	int		nw;
 
 	sep[0] = c;
 	sep[1] = '\0';

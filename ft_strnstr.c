@@ -6,7 +6,7 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:18 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 19:50:07 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/17 02:38:15 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,8 +15,8 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char *last;
-	size_t len_needle;
+	char	*last;
+	size_t	len_needle;
 
 	if (*needle == '\0')
 		return ((char *)haystack);

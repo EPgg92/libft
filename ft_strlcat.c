@@ -6,7 +6,7 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:15 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 19:31:20 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/17 02:41:40 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -28,5 +28,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	while (*src && i < size)
 		*(dst + i++) = *src++;
 	*(dst + i) = '\0';
-	return(len_dst + len_src);
+	return (len_dst + len_src);
 }

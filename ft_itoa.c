@@ -6,13 +6,10 @@
 /*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:07 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 20:04:05 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/17 02:50:47 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
-
-// todo /!\ hugo dit qu'il faut utiliser le n au lieu de n pour le - 
-
 
 #include "libft.h"
 
@@ -30,7 +27,10 @@ char	*ft_itoa(int n)
 		return (NULL);
 	if (nbr < 0)
 		neg = 1;
-	nbr = ABS(nbr);
+	if (nbr == -2147483648)
+		if ((ft_strcpy(str, "-2147483648")) != NULL)
+			return (str);
+	nbr = ft_abs(nbr);
 	while (len)
 	{
 		str[--len] = '0' + (nbr % 10);

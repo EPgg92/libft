@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                          LE - /            */
+/*                                                              /             */
+/*   ft_isincharset.c                                 .::    .:/ .      .::   */
+/*                                                 +:+:+   +:    +:  +:+:+    */
+/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*                                                 #+#   #+    #+    #+#      */
+/*   Created: 2018/10/17 02:29:09 by epoggio      #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/17 02:52:27 by epoggio     ###    #+. /#+    ###.fr     */
+/*                                                         /                  */
+/*                                                        /                   */
+/* ************************************************************************** */
 
-int ft_isincharset(char c, char const *charset)
+int	ft_isincharset(char c, char const *charset)
 {
 	while (*charset)
 		if (c == *charset++)
