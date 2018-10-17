@@ -11,11 +11,18 @@ OBJECTS = ft_atoi.o \
 	ft_isalpha.o \
 	ft_isascii.o \
 	ft_isdigit.o \
+	ft_isincharset.o \
 	ft_islower.o \
 	ft_isprint.o \
 	ft_isspace.o \
 	ft_isupper.o \
 	ft_itoa.o \
+	ft_lstadd.o \
+	ft_lstdel.o \
+	ft_lstdelone.o \
+	ft_lstiter.o \
+	ft_lstmap.o \
+	ft_lstnew.o \
 	ft_memalloc.o \
 	ft_memccpy.o \
 	ft_memchr.o \
@@ -35,10 +42,12 @@ OBJECTS = ft_atoi.o \
 	ft_putstr.o \
 	ft_putstr_fd.o \
 	ft_strcat.o \
+	ft_strchar.o \
 	ft_strchr.o \
 	ft_strclr.o \
 	ft_strcmp.o \
 	ft_strcpy.o \
+	ft_strcspn.o \
 	ft_strdel.o \
 	ft_strdup.o \
 	ft_strequ.o \
@@ -49,6 +58,7 @@ OBJECTS = ft_atoi.o \
 	ft_strlen.o \
 	ft_strmap.o \
 	ft_strmapi.o \
+	ft_strmtok.o \
 	ft_strncat.o \
 	ft_strncmp.o \
 	ft_strncpy.o \
@@ -56,21 +66,17 @@ OBJECTS = ft_atoi.o \
 	ft_strnew.o \
 	ft_strnlen.o \
 	ft_strnstr.o \
+	ft_strpbrk.o \
 	ft_strrchr.o \
 	ft_strreplace.o \
 	ft_strrev.o \
+	ft_strsep.o \
 	ft_strsplit.o \
+	ft_strspn.o \
 	ft_strstr.o \
 	ft_strsub.o \
-	ft_strpbrk.o \
-	ft_strspn.o \
-	ft_strcspn.o \
-	ft_strsep.o \
 	ft_strtrim.o \
-	ft_strmtok.o \
-	ft_strchar.o \
 	ft_strtrimcharset.o \
-	ft_isincharset.o \
 	ft_tolower.o \
 	ft_toupper.o
 
@@ -82,7 +88,7 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
-	$(CC) $(CFLAGS) main.c $(NAME) # to remove
+	#$(CC) $(CFLAGS) test/main $(NAME) # to remove
 
 clean:
 	rm -f $(OBJECTS)
