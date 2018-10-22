@@ -13,7 +13,7 @@
 
 #include "libft.h"
 
-void	*ft_bzero(void *b, size_t n)
+void	*ft_bzero(void *b, size_t n) // ne prend pas un pointerurs sur fonction
 {
 	return (ft_memset(b, 0, n));
 }
