@@ -18,24 +18,16 @@ int	ft_atoi(const char *str)
 	long long nbr;
 	long long neg;
 
-	neg = 1;
 	nbr = 0;
 	while (ft_isspace(*str))
 		str++;
-	if (*str == '-' || *str == '+')
+	neg = (*str == '-') ? -1 : 1;
+	str += (*str == '-' || *str == '+') ? 1 : 0;
+	while (ft_isdigit(*str))
 	{
-		if (*str == '-')
-			neg = -1;
+		nbr *= 10;
+		nbr += *str - '0';
 		str++;
-	}
-	while (ft_isdigit(*str) && *str)
-	{
-		if (!ft_isdigit(*(str + 1)))
-		{
-			nbr += *str - '0';
-			break ;
-		}
-		nbr = (nbr + *str++ - '0') * 10;
 	}
 	return ((int)nbr * neg);
 }
