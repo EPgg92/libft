@@ -85,7 +85,6 @@ SOURCES = ft_atoi.c \
 
 OBJECTS = $(SOURCES:.c=.o)
 
-
 all: $(NAME)
 
 $(NAME): $(OBJECTS) libft.h
