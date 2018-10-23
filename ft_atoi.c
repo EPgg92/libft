@@ -26,7 +26,7 @@ int	ft_atoi(const char *str)
 	while (ft_isdigit(*str))
 	{
 		nbr *= 10;
-		nbr += *str - '0';
+		nbr += *str - '0'; // one line
 		str++;
 	}
 	return ((int)nbr * neg);
