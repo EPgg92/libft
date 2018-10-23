@@ -88,13 +88,16 @@ OBJECTS = $(SOURCES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJECTS) libft.h
-	ar rc $(NAME) $(OBJECTS)
+	@ ar rc $(NAME) $(OBJECTS)
+	@ echo "make done"
 
 clean:
-	rm -f $(OBJECTS)
+	@ rm -f $(OBJECTS)
+	@ echo "clean objects"
 
 fclean: clean
-	rm -f $(NAME) a.out
+	@ rm -f $(NAME) a.out
+	@ echo "clean bin"
 
 re: fclean all
 
