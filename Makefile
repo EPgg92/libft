@@ -87,7 +87,7 @@ OBJECTS = $(SOURCES:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS)
+$(NAME): $(OBJECTS) libft.h
 	ar rc $(NAME) $(OBJECTS)
 
 clean:
