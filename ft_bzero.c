@@ -13,11 +13,7 @@
 
 #include "libft.h"
 
-<<<<<<< HEAD
 void	ft_bzero(void *b, size_t len)
-=======
-void	*ft_bzero(void *b, size_t n) // ne prend pas un pointerurs sur fonction
->>>>>>> 4160f974ffba0bfa33a215d4ea544c1f85bef2db
 {
 	unsigned char *s;
 
