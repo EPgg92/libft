@@ -21,15 +21,12 @@ char	*ft_itoa(int n)
 	long	nbr;
 
 	nbr = (long)n;
-	neg = 0;
+	if (nbr == -2147483648)
+		return (ft_strdup("-2147483648"));
 	len = ft_nbrlen(nbr);
 	if ((str = ft_strnew(len)) == NULL)
 		return (NULL);
-	if (nbr < 0)
-		neg = 1;
-	if (nbr == -2147483648)
-		if ((ft_strcpy(str, "-2147483648")) != NULL)
-			return (str);
+	neg = ((nbr < 0) ? 1 : 0);
 	nbr = ft_abs(nbr);
 	while (len)
 	{
