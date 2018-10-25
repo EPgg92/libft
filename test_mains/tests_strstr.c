@@ -27,8 +27,8 @@ int	main()
 	char *test;
 	char *ft_test;
 
-	ft_test = ft_strstr(hay, needle);
-	test = strstr(hay, needle);
+	ft_test = ft_strstr(hay, "\0");
+	test = strstr(hay, "\0");
 	printf("%s\n%p\n", test, test);
 	printf("%s\n%p\n", ft_test, ft_test);
 	return (0);

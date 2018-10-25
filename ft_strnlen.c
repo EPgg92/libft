@@ -18,7 +18,7 @@ size_t	ft_strnlen(const char *str, size_t n)
 	int i;
 
 	i = 0;
-	while (*str && n-- && ++i)
-		;
+	while (*str && n--)
+		++i;
 	return (i);
 }

@@ -102,7 +102,7 @@ fclean: clean
 re: fclean all
 
 test: all
-	gcc test_mains/tests_memccpy.c $(NAME)
+	gcc test_mains/main.c $(NAME)
 	./a.out
 
 
