@@ -3,7 +3,7 @@ NAME = libft.a
 
 CFLAGS = -Wall -Wextra -Werror
 
-CC = gcc
+CC = gcc -g
 
 SOURCES = ft_atoi.c \
 	ft_bzero.c \
@@ -88,7 +88,7 @@ OBJECTS = $(SOURCES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJECTS) libft.h
-	@ ar rc $(NAME) $(OBJECTS)
+	@ ar rcus $(NAME) $(OBJECTS)
 	@ echo "make done"
 
 clean:
@@ -100,6 +100,11 @@ fclean: clean
 	@ echo "clean bin"
 
 re: fclean all
+
+test: all
+	gcc test_mains/tests_memccpy.c $(NAME)
+	./a.out
+
 
 .PHONY: all clean fclean re
 .SILENT: $(OBJECTS)
