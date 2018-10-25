@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <stdio.h> //to remove
 
 typedef struct		s_list
 {
