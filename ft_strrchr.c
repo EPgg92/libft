@@ -23,6 +23,6 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	while (len--)
 		if (*(--s) == (unsigned char)c)
-			return((char *)s);
+			return ((char *)s);
 	return (NULL);
 }
