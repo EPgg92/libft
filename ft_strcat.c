@@ -15,12 +15,12 @@
 
 char	*ft_strcat(char *dest, const char *scr)
 {
-	char *begin;
+	char *tmp;
 
-	begin = dest;
-	dest += ft_strlen(dest);
+	tmp = dest;
+	tmp += ft_strlen(dest);
 	while (*scr)
-		*dest++ = *scr++;
-	*dest = '\0';
-	return (begin);
+		*tmp++ = *scr++;
+	*tmp = '\0';
+	return (dest);
 }
