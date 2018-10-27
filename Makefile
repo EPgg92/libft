@@ -101,10 +101,5 @@ fclean: clean
 
 re: fclean all
 
-test: all
-	gcc test_mains/tests_strrchr.c $(NAME)
-	./a.out
-
-
 .PHONY: all clean fclean re
 .SILENT: $(OBJECTS)
