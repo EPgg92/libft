@@ -18,9 +18,9 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 	char	*ptr;
 
 	ptr = s1;
-	s1 += ft_strlen(s1);
+	ptr += ft_strlen(s1);
 	while (*s2 && n--)
-		*s1++ = *s2++;
-	*s1 = '\0';
-	return (ptr);
+		*ptr++ = *s2++;
+	*ptr = '\0';
+	return (s1);
 }
