@@ -19,8 +19,6 @@ char	*ft_strcat(char *dest, const char *scr)
 
 	tmp = dest;
 	tmp += ft_strlen(dest);
-	while (*scr)
-		*tmp++ = *scr++;
-	*tmp = '\0';
+	ft_strcpy(tmp, scr);
 	return (dest);
 }
