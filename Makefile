@@ -99,6 +99,8 @@ fclean: clean
 	@ rm -f $(NAME) a.out
 	@ echo "clean bin"
 
+
+
 re: fclean all
 
 .PHONY: all clean fclean re
