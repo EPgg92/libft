@@ -6,7 +6,7 @@
 /*   By: epoggio <epoggio@student.42.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:04 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/28 21:29:56 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/28 22:25:08 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,8 +15,8 @@
 
 int	ft_atoi(const char *str)
 {
-	long	nbr;
-	int		neg;
+	int	nbr;
+	int	neg;
 
 	nbr = 0;
 	while (ft_isspace(*str))

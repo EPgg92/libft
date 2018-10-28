@@ -3,7 +3,7 @@ NAME = libft.a
 
 CFLAGS = -Wall -Wextra -Werror
 
-CC = gcc -g3
+CC = gcc
 
 SOURCES = ft_atoi.c		\
 	ft_bzero.c			\
