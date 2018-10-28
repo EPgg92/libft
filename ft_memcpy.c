@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_memcpy.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*   By: epoggio <epoggio@student.42.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:08 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:50:47 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/28 21:30:41 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,10 +15,10 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char *mem;
+	size_t i;
 
-	mem = (unsigned char *)dst;
-	while (n--)
-		*mem++ = *(unsigned char *)src++;
+	i = -1;
+	while (++i < n)
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 	return (dst);
 }

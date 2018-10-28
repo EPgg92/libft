@@ -3,21 +3,21 @@ NAME = libft.a
 
 CFLAGS = -Wall -Wextra -Werror
 
-CC = gcc -g
+CC = gcc -g3 #-fsanitize=address
 
-SOURCES = ft_atoi.c \
-	ft_bzero.c \
-	ft_isalnum.c \
-	ft_isalpha.c \
-	ft_isascii.c \
-	ft_isdigit.c \
-	ft_isincharset.c \
-	ft_islower.c \
-	ft_isprint.c \
-	ft_isspace.c \
-	ft_isupper.c \
-	ft_itoa.c \
-	ft_lstadd.c \
+SOURCES = ft_atoi.c		\
+	ft_bzero.c			\
+	ft_isalnum.c		\
+	ft_isalpha.c		\
+	ft_isascii.c		\
+	ft_isdigit.c		\
+	ft_isincharset.c	\
+	ft_islower.c		\
+	ft_isprint.c		\
+	ft_isspace.c		\
+	ft_isupper.c		\
+	ft_itoa.c			\
+	ft_lstadd.c			\
 	ft_lstdel.c \
 	ft_lstdelone.c \
 	ft_lstiter.c \
@@ -101,5 +101,8 @@ fclean: clean
 
 re: fclean all
 
+test: all
+	$(CC) main.c $(NAME)
+
 .PHONY: all clean fclean re
-.SILENT: $(OBJECTS)
+#.SILENT: $(OBJECTS)

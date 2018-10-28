@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_strcmp.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*   By: epoggio <epoggio@student.42.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/10/11 18:24:13 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 19:14:29 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/28 21:25:30 by epoggio      #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/28 21:31:05 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,5 +15,11 @@
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	return (ft_memcmp(s1, s2, ft_min(ft_strlen(s1) + 1, ft_strlen(s2) + 1)));
+	size_t i;
+
+	i = 0;
+	while (((unsigned char *)s2)[i] && ((unsigned char *)s1)[i] && \
+		((unsigned char *)s1)[i] == ((unsigned char *)s2)[i])
+		i++;
+	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 }

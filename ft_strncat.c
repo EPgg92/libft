@@ -15,12 +15,13 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	char	*ptr;
+	size_t i;
+	size_t j;
 
-	ptr = s1;
-	ptr += ft_strlen(s1);
-	while (*s2 && n--)
-		*ptr++ = *s2++;
-	*ptr = '\0';
+	j = 0;
+	i = ft_strlen(s1);
+	while (s2[j] && n--)
+		s1[i++] = s2[j++];
+	s1[i] = '\0';
 	return (s1);
 }
