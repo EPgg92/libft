@@ -20,7 +20,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		if ((*(unsigned char *)dst = *(unsigned char *)src) == (unsigned char)c)
 			return (dst + 1);
 		dst++;
-		src++;
+		src++; // Use indice mother fucker
 	}
 	return (NULL);
 }
