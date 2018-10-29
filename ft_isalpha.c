@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_isalpha.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*   By: epoggio <epoggio@student.42.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/11 18:24:05 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/11 18:47:20 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/29 10:51:38 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,5 +15,5 @@
 
 int	ft_isalpha(int c)
 {
-	return (ft_islower(c) || ft_isupper(c));
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }

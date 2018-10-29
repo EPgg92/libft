@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_strrchr.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: epoggio <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
+/*   By: epoggio <epoggio@student.42.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/28 21:36:11 by epoggio      #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/28 21:36:15 by epoggio     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/29 10:55:28 by epoggio     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,7 +15,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		len;
+	size_t	len;
 
 	len = ft_strlen(s);
 	s += len;
